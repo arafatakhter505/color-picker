@@ -1,0 +1,150 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* globar style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #dedfee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container style */
+.container {
+  width: 600px;
+  /* height: 500px; */
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* section header style */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+.section-header button {
+  background-color: transparent;
+  border: none;
+  color: tomato;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* preview color style */
+#display-color {
+  width: 100%;
+  height: 100px;
+  background-color: #dedfee;
+  margin: 20px 0;
+}
+
+/* copy mode style */
+.copy-mode,
+.code-preview,
+.rgb-input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.copy-mode h4,
+.rgb-colors h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* code preview style */
+.code-preview {
+  margin-bottom: 20px;
+}
+.code-preview h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+.code-preview .hex-code,
+.code-preview .rgb-code {
+  width: 50%;
+}
+.hex-code {
+  margin-right: 10px;
+}
+.rgb-code {
+  margin-left: 10px;
+}
+.code-preview input {
+  width: 100%;
+  padding: 0 5px;
+}
+.code-preview input:focus {
+  outline: none;
+}
+
+/* adjust colors style */
+.rgb-input-area {
+  flex-wrap: wrap;
+}
+.rgb-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* animation */
+.toast-message {
+  top: 20px;
+  position: absolute;
+  width: 200px;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 12px;
+  animation: slide 0.3s;
+}
+@keyframes slide {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+.slide-out {
+  animation: slide-out 0.3s;
+}
+@keyframes slide-out {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+
+/* mobile view */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* tab view */
+/* @media only screen and (min-width: 689px) and (max-width: 992px) {
+} */

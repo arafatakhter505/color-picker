@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker - Web Application By JS</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container start -->
+    <div class="container">
+      <section>
+        <div class="section-header">
+          <h3>Display Color</h3>
+          <button id="random-btn">Random Color</button>
+        </div>
+        <!-- color preview -->
+        <div id="display-color"></div>
+      </section>
+      <section>
+        <!-- change & copy color -->
+        <div class="section-header">
+          <h3>Change & Copy Color</h3>
+          <button id="copy-btn">Copy To Clipboard</button>
+        </div>
+        <!-- copy mode -->
+        <div class="copy-mode">
+          <h4>Select Copy Mode</h4>
+          <div class="radio-selector">
+            <input
+              type="radio"
+              name="color-mode"
+              id="hex-mode"
+              value="hex"
+              checked
+            />
+            <label for="hex-mode">Hex</label>
+            <input type="radio" name="color-mode" id="rgb-mode" value="rgb" />
+            <label for="rgb-mode">RGB</label>
+          </div>
+        </div>
+        <!-- code preview -->
+        <div class="code-preview">
+          <div class="hex-code">
+            <h5>Hex</h5>
+            <input id="hex-code-field" type="text" value="#dedfee" />
+          </div>
+          <div class="rgb-code">
+            <h5>RGB</h5>
+            <input id="rgb-code-field" type="text" value="rgb(222, 223, 238)" />
+          </div>
+        </div>
+        <!-- adjust rgb colors -->
+        <div class="rgb-colors">
+          <h4>Adjust RGB Colors</h4>
+          <div class="rgb-input-area">
+            <div class="rgb-item">
+              <div class="rgb-item-header">
+                <span>Red</span>
+                <span id="red-lebel">222</span>
+              </div>
+              <input type="range" min="0" max="255" value="222" id="rgb-red" />
+            </div>
+            <div class="rgb-item">
+              <div class="rgb-item-header">
+                <span>Green</span>
+                <span id="green-lebel">223</span>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                value="223"
+                id="rgb-green"
+              />
+            </div>
+            <div class="rgb-item">
+              <div class="rgb-item-header">
+                <span>Blue</span>
+                <span id="blue-lebel">238</span>
+              </div>
+              <input type="range" min="0" max="255" value="238" id="rgb-blue" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- container end -->
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
