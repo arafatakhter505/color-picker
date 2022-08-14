@@ -29,6 +29,12 @@ randomBtn.addEventListener("click", function () {
     16
   )}`;
   rgbCode.value = `rgb(${red}, ${green}, ${blue})`;
+  rgbRed.value = red;
+  rgbGreen.value = green;
+  rgbBlue.value = blue;
+  redLebel.innerText = rgbRed.value;
+  greenLebel.innerText = rgbGreen.value;
+  blueLebel.innerText = rgbBlue.value;
 });
 
 // rgb slider
